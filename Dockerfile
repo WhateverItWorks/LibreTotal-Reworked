@@ -8,4 +8,5 @@ ENV PYTHONFAULTHANDLER=1 \
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt --no-cache-dir
+EXPOSE 8000
 CMD ["python", "manage.py"]
